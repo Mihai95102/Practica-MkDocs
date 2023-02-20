@@ -3,5 +3,18 @@ site_name: Práctica de IAW
 nav:
     - Principal: index.md
     - Acerca de: about.md
+    - Primer Trimestre:
+        - Practica 1: practica1.md
+        - Practica 2: practica3.md
+        - Practica 3: practica2.md
+    - Segundo Trimestre:
+        - Practica 4: practica4.md
+        - Practica 5: practica5.md
+        - Practica 6: practica6.md
 
-theme: material
+theme:
+    name: material
+    
+    palette:
+        scheme: slate
+        primary: lime
