@@ -1,4 +1,4 @@
-site_name: Práctica de IAW
+site_name: Práctica MkDocs IAW
 
 nav:
     - Principal: index.md
