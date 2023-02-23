@@ -1,27 +1,27 @@
 # IAW-Practica-01
 Práctica 01 del módulo de IAW
 
-## Implementando la nueva Instancia:
+## Implementando la nueva Instancia
 Lo primero que haremos será entrar en dentro del panel EC2 en AWS Academy para poder lanzar la nueva instancia.
-\
+
 La configuración de la instancia será la siguiente:
 
-\
+
 __1:__ Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu
 
-![Error]({{ site.url }}/images/practica1/creacion1.png){: .center}{:width="450px"}
+![Error](images/practica1/creacion1.png)
 
-\
+
 __2:__ Seleccionamos el par de claves que hemos usado anteriormente *vockey*, aunque se podría crear otro par de claves si queremos.
 
-![Error]({{ site.url }}/images/practica1/creacion2.png){: .center}{:width="450px"}
+![Error](images/practica1/creacion2.png)
 
-\
+
 __3:__ Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.
 
-![Error]({{ site.url }}/images/practica1/creacion3.png){: .center}{:width="450px"}
+![Error](images/practica1/creacion3.png)
 
-\
+
 __4:__ Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.
 
 
@@ -29,14 +29,14 @@ __4:__ Como último paso para acabar con la configuración de la instancia, hare
 
 Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del *Explorador Remoto* de __Microsoft__
 
-![Error]({{ site.url }}/images/practica1/implementar1.png){: .center}{:width="350px"}
+![Error](images/practica1/implementar1.png)
 
-\
+
 __1:__ Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.
 
-![Error]({{ site.url }}/images/practica1/implementar2.png){: .center}{:width="350px"}
+![Error](images/practica1/implementar2.png)
 
-\
+
 __2:__ Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en __GitHub__ para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:
 
 ```bash
@@ -47,9 +47,9 @@ git clone https://github.com/Mihai95102/IAW-Practica-01.git
 
 Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio:
 
-![Error]({{ site.url }}/images/practica1/trabajo1.png){: .center}{:width="350px"}
+![Error](images/practica1/trabajo1.png)
 
-\
+
 Empezamos a crear el script de automatización para la instalación de las herramientas LAMP
 
 El script *install_lamp.sh* contendrá lo siguiente:
@@ -175,24 +175,24 @@ Una ejecutemos estos scripts podremos comprobar que la instalación se ha realiz
 
 __1:__ Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, *"18.234.12.215/phpmyadmin"*.
 
-![Error]({{ site.url }}/images/practica1/comprobar1.png){: .center}{:width="450px"}
+![Error](images/practica1/comprobar1.png)
 
 Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.
 
-![Error]({{ site.url }}/images/practica1/comprobar2.png){: .center}{:width="450px"}
+![Error](images/practica1/comprobar2.png)
 
 __2:__ A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador *"18.234.12.215/adminer"*.
 
-![Error]({{ site.url }}/images/practica1/comprobar3.png){: .center}{:width="450px"}
+![Error](images/practica1/comprobar3.png)
 
 Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.
 
-![Error]({{ site.url }}/images/practica1/comprobar4.png){: .center}{:width="450px"}
+![Error](images/practica1/comprobar4.png)
 
 __3:__ Finalmente entraremos al servidor de GoAcess que registra la actividad que hay en el servidor. Para acceder a el con nuestro usuario y contraseña ponemos en el navegador *"18.234.12.215/stats"*.
 
-![Error]({{ site.url }}/images/practica1/comprobar5.png){: .center}{:width="450px"}
+![Error](images/practica1/comprobar5.png)
 
 Una vez accedamos podemos ver las estadísticas del servidor.
 
-![Error]({{ site.url }}/images/practica1/comprobar6.png){: .center}{:width="450px"}
+![Error](images/practica1/comprobar6.png)

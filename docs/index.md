@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+# Bienvenido a mi Práctica de MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Para más información sobre MkDocs [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Comandos
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `mkdocs new [dir-name]` - Crear un nuevo proyecto.
+* `mkdocs serve` - Activar la actualización en tiempo real de los documentos.
+* `mkdocs build` - Monta la documentación del sitio.
+* `mkdocs -h` - Imprime mensaje de ayuda.
 
-## Project layout
+## Diseño del proyecto
 
-    mkdocs.yml    # The configuration file.
+    mkdocs.yml    # Archivo de configuración.
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        index.md  # Documentación de la página principal.
+        ...       # Otras páginas de Markdown, imágenes u otros archivos.

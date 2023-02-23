@@ -9,7 +9,6 @@ nav:
 theme:
     name: material
     language: es
-    
     palette:
         scheme: slate
-        primary: lime
+        primary: blue

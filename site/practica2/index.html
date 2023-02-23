@@ -1,0 +1,547 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../practica1/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>Práctica 2 - Práctica MkDocs IAW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="lime" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#iaw-practica-02" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Práctica MkDocs IAW" class="md-header__button md-logo" aria-label="Práctica MkDocs IAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Práctica MkDocs IAW
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Práctica 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Práctica MkDocs IAW" class="md-nav__button md-logo" aria-label="Práctica MkDocs IAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Práctica MkDocs IAW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Principal
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        Acerca de
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practica1/" class="md-nav__link">
+        Práctica 1
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Práctica 2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Práctica 2
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementando-la-nueva-instancia" class="md-nav__link">
+    Implementando la nueva Instancia:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementacion-de-la-instancia-en-visual-studio-code" class="md-nav__link">
+    Implementación de la Instancia en Visual Studio Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empezando-a-automatizar-los-scripts" class="md-nav__link">
+    Empezando a automatizar los scripts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#implementando-la-nueva-instancia" class="md-nav__link">
+    Implementando la nueva Instancia:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementacion-de-la-instancia-en-visual-studio-code" class="md-nav__link">
+    Implementación de la Instancia en Visual Studio Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empezando-a-automatizar-los-scripts" class="md-nav__link">
+    Empezando a automatizar los scripts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="iaw-practica-02">IAW-Practica-02</h1>
+<p>Práctica 2 de instalación de herramientas LAMP en <strong>RedHatEnterpriseLinux (RHEL)</strong></p>
+<h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
+<p>Lo primero que haremos será entrar en dentro del panel EC2 en AWS Academy para poder lanzar la nueva instancia.
+\
+La configuración de la instancia será la siguiente:</p>
+<p>\
+<strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el RedHat</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/creacion1.png" />{: .center}{:width="450px"}</p>
+<p>\
+<strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/creacion2.png" />{: .center}{:width="450px"}</p>
+<p>\
+<strong>3:</strong> Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/creacion3.png" />{: .center}{:width="450px"}</p>
+<p>\
+<strong>4:</strong> Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.</p>
+<h2 id="implementacion-de-la-instancia-en-visual-studio-code">Implementación de la Instancia en Visual Studio Code</h2>
+<p>Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del <em>Explorador Remoto</em> de <strong>Microsoft</strong></p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/implementar1.png" />{: .center}{:width="350px"}</p>
+<p>\
+<strong>1:</strong> Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/implementar2.png" />{: .center}{:width="350px"}</p>
+<p>\
+<strong>2:</strong> Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en <strong>GitHub</strong> para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:</p>
+<pre><code class="language-bash">git clone https://github.com/Mihai95102/IAW-Practica-02.git
+</code></pre>
+<h2 id="empezando-a-automatizar-los-scripts">Empezando a automatizar los scripts</h2>
+<p>Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio:</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/trabajo1.png" />{: .center}{:width="350px"}</p>
+<p>\
+Empezamos a crear el script de automatización para la instalación de las herramientas LAMP, además de phpMyAdmin y Adminer.
+\
+El script <em>LAMP_tools.sh</em> contendrá lo siguiente:</p>
+<pre><code class="language-bash">#!/bin/bash
+
+set -x
+
+# Variables de configuración
+DB_USER=mihai
+DB_PASSWORD=hola
+
+# Actualizamos los repositorios
+dnf update -y
+
+# Actualizamos los paquetes nuevos
+# dnf upgrade -y
+
+# Instalamos el servidor web apache
+dnf install httpd -y
+
+    # Iniciamos el servicio de Apache
+    systemctl start httpd
+
+    # Habilitamos el servicio de Apache
+    systemctl enable httpd
+
+# Instalamos el sistema gestor de BD
+dnf install mysql-server -y
+
+    # Iniciamos el servicio de MySQL
+    systemctl start mysqld
+
+    # Habilitamos el servicio de MySQL
+    systemctl enable mysqld
+
+# Instalamos PHP
+dnf install php -y
+
+    # Instalamos las extensiones de PHP
+    dnf install php-mysqlnd -y
+
+    dnf install php-zip php-json php-fpm -y
+
+    # Habilitamos el servicio de FPM
+    systemctl enable --now php-fpm
+
+    # Después de la instalación es necesario reiniciar el servicio de Apache
+    systemctl restart httpd
+
+# Copiamos el archivo para ver que se ha instalado
+cp ../php/info.php /var/www/html
+
+# Instalamos los repositorios necesarios para la instalación de phpMyAdmin
+dnf install -y wget php php-pdo php-pecl-zip php-common php-mbstring php-cli php-xml tar
+dnf install -y php-mbstring
+
+# Instalación de phpMyAdmin
+
+    # Creación de la base de datos y el usuario de BD
+    mysql -u root &lt;&lt;&lt; &quot;DROP USER IF EXISTS $DB_USER&quot;
+    mysql -u root &lt;&lt;&lt; &quot;CREATE USER IF NOT EXISTS '$DB_USER'@'%' IDENTIFIED BY '$DB_PASSWORD'&quot;
+    mysql -u root &lt;&lt;&lt; &quot;GRANT ALL PRIVILEGES ON *.* TO $DB_USER@'%'&quot;
+
+    # Accedemos al directorio /var/www/html
+    cd /var/www/html
+
+    # Instalamos la utilidad wget para poder descargar el código fuente de phpMyAdmin
+    dnf install wget
+
+    # Descargamos el código fuente de phpMyAdmin
+    wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.tar.gz
+
+    # Descomprimimos el archivo que acabamos de descargar
+    tar xvf phpMyAdmin-latest-all-languages.tar.gz
+
+    # Eliminamos el archivo .tar.gz
+    rm phpMyAdmin-latest-all-languages.tar.gz
+
+    # Renombramos el directorio
+    mv phpMyAdmin-5.2.0-all-languages/ phpmyadmin
+
+    # Modificamos el propietario y el grupo del directorio
+    chown -R apache:apache /var/www/html/phpmyadmin
+
+    # Creamos el archivo de configuración a partir del archivo config.sample.inc.php
+    cp /var/www/html/phpmyadmin/config.sample.inc.php /var/www/html/phpmyadmin/config.inc.php
+
+    # Editamos el archivo de configuración config.inc.php
+    # nano /var/www/html/phpmyadmin/config.inc.php
+
+# Instalación de Adminer:
+
+    # Descargamos el archivo de Adminer
+    wget https://github.com/vrana/adminer/releases/download/v4.8.1/adminer-4.8.1-mysql.php
+
+    # Creamos un directorio para Adminer
+    mkdir -p /var/www/html/adminer
+
+    # Renombramos el archivo
+    mv adminer-4.8.1-mysql.php /var/www/html/adminer/index.php
+
+    # Modificamos el propietario y el grupo del directorio /var/www/html
+    chown -R apache:apache /var/www/html -R
+
+    # Reiniciamos Apache
+    systemctl restart httpd
+</code></pre>
+<p><strong>1:</strong> Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, <em>"18.234.12.215/phpmyadmin"</em>.</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/comprobar1.png" />{: .center}{:width="450px"}</p>
+<p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/comprobar2.png" />{: .center}{:width="450px"}</p>
+<p><strong>2:</strong> A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador <em>"18.234.12.215/adminer"</em>.</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/comprobar3.png" />{: .center}{:width="450px"}</p>
+<p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
+<p><img alt="Error" src="{{ site.url }}/images/practica2/comprobar4.png" />{: .center}{:width="450px"}</p>
+<p>Aqui termina la guía de la instalación de las herramientas LAMP.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>
