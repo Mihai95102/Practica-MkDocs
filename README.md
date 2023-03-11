@@ -1,2 +1,0 @@
-# Practica-MkDocs
-Práctica MkDocs
