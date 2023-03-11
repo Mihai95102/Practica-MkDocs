@@ -15,7 +15,7 @@
         <link rel="next" href="../practica2/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ffa9267a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7bf56d0a.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -57,7 +57,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="lime" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="">
   
     
     
@@ -79,7 +79,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
     <a href=".." title="Práctica MkDocs IAW" class="md-header__button md-logo" aria-label="Práctica MkDocs IAW" data-md-component="logo">
       
@@ -251,7 +253,7 @@
       
         <li class="md-nav__item">
   <a href="#implementando-la-nueva-instancia" class="md-nav__link">
-    Implementando la nueva Instancia:
+    Implementando la nueva Instancia
   </a>
   
 </li>
@@ -321,7 +323,7 @@
       
         <li class="md-nav__item">
   <a href="#implementando-la-nueva-instancia" class="md-nav__link">
-    Implementando la nueva Instancia:
+    Implementando la nueva Instancia
   </a>
   
 </li>
@@ -357,36 +359,28 @@
 
 <h1 id="iaw-practica-01">IAW-Practica-01</h1>
 <p>Práctica 01 del módulo de IAW</p>
-<h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
-<p>Lo primero que haremos será entrar en dentro del panel EC2 en AWS Academy para poder lanzar la nueva instancia.
-\
-La configuración de la instancia será la siguiente:</p>
-<p>\
-<strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/creacion1.png" />{: .center}{:width="450px"}</p>
-<p>\
-<strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/creacion2.png" />{: .center}{:width="450px"}</p>
-<p>\
-<strong>3:</strong> Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/creacion3.png" />{: .center}{:width="450px"}</p>
-<p>\
-<strong>4:</strong> Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.</p>
+<h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia</h2>
+<p>Lo primero que haremos será entrar en dentro del panel EC2 en AWS Academy para poder lanzar la nueva instancia.</p>
+<p>La configuración de la instancia será la siguiente:</p>
+<p><strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu</p>
+<p><img alt="Error" src="../images/practica1/creacion1.png" /></p>
+<p><strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
+<p><img alt="Error" src="../images/practica1/creacion2.png" /></p>
+<p><strong>3:</strong> Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.</p>
+<p><img alt="Error" src="../images/practica1/creacion3.png" /></p>
+<p><strong>4:</strong> Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.</p>
 <h2 id="implementacion-de-la-instancia-en-visual-studio-code">Implementación de la Instancia en Visual Studio Code</h2>
 <p>Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del <em>Explorador Remoto</em> de <strong>Microsoft</strong></p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/implementar1.png" />{: .center}{:width="350px"}</p>
-<p>\
-<strong>1:</strong> Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/implementar2.png" />{: .center}{:width="350px"}</p>
-<p>\
-<strong>2:</strong> Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en <strong>GitHub</strong> para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:</p>
+<p><img alt="Error" src="../images/practica1/implementar1.png" /></p>
+<p><strong>1:</strong> Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.</p>
+<p><img alt="Error" src="../images/practica1/implementar2.png" /></p>
+<p><strong>2:</strong> Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en <strong>GitHub</strong> para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:</p>
 <pre><code class="language-bash">git clone https://github.com/Mihai95102/IAW-Practica-01.git
 </code></pre>
 <h2 id="empezando-a-automatizar-los-scripts">Empezando a automatizar los scripts</h2>
 <p>Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio:</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/trabajo1.png" />{: .center}{:width="350px"}</p>
-<p>\
-Empezamos a crear el script de automatización para la instalación de las herramientas LAMP</p>
+<p><img alt="Error" src="../images/practica1/trabajo1.png" /></p>
+<p>Empezamos a crear el script de automatización para la instalación de las herramientas LAMP</p>
 <p>El script <em>install_lamp.sh</em> contendrá lo siguiente:</p>
 <pre><code class="language-bash">#!/bin/bash
 
@@ -501,17 +495,17 @@ sudo goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --lo
 </code></pre>
 <p>Una ejecutemos estos scripts podremos comprobar que la instalación se ha realizado correctamente:</p>
 <p><strong>1:</strong> Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, <em>"18.234.12.215/phpmyadmin"</em>.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/comprobar1.png" />{: .center}{:width="450px"}</p>
+<p><img alt="Error" src="../images/practica1/comprobar1.png" /></p>
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/comprobar2.png" />{: .center}{:width="450px"}</p>
+<p><img alt="Error" src="../images/practica1/comprobar2.png" /></p>
 <p><strong>2:</strong> A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador <em>"18.234.12.215/adminer"</em>.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/comprobar3.png" />{: .center}{:width="450px"}</p>
+<p><img alt="Error" src="../images/practica1/comprobar3.png" /></p>
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/comprobar4.png" />{: .center}{:width="450px"}</p>
+<p><img alt="Error" src="../images/practica1/comprobar4.png" /></p>
 <p><strong>3:</strong> Finalmente entraremos al servidor de GoAcess que registra la actividad que hay en el servidor. Para acceder a el con nuestro usuario y contraseña ponemos en el navegador <em>"18.234.12.215/stats"</em>.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/comprobar5.png" />{: .center}{:width="450px"}</p>
+<p><img alt="Error" src="../images/practica1/comprobar5.png" /></p>
 <p>Una vez accedamos podemos ver las estadísticas del servidor.</p>
-<p><img alt="Error" src="{{ site.url }}/images/practica1/comprobar6.png" />{: .center}{:width="450px"}</p>
+<p><img alt="Error" src="../images/practica1/comprobar6.png" /></p>
 
 
 
@@ -552,7 +546,7 @@ sudo goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --lo
     <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      <script src="../assets/javascripts/bundle.fc8c2696.min.js"></script>
       
     
   </body>
